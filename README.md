@@ -1,13 +1,13 @@
 # Team-Daisy-Tech-Presentation-Play
 
-The files in this Demo are based on the default "Starter Example" from the Play! documentation. It's documentation can be seen below.
-	* The files that have the primary changes are app/controllers/HomeController.java and app/views/hello.scala.html
+* The files in this Demo are based on the default "Starter Example" from the Play! documentation. It's documentation can be seen below.
+  * The files that have the primary changes are app/controllers/HomeController.java and app/views/hello.scala.html
 
-The Presentation can be found here: https://docs.google.com/presentation/d/1IzMNlr7pRBH8J0zy-GGsioW4_ZN7E6HQ_hHzTIzEM_g/edit?usp=sharing
-	* The learning objectives are included in the presentation on slide 2
-	* Questions can be found on the the 2nd to last slide
+* The Presentation can be found here: https://docs.google.com/presentation/d/1IzMNlr7pRBH8J0zy-GGsioW4_ZN7E6HQ_hHzTIzEM_g/edit?usp=sharing
+  * The learning objectives are included in the presentation on slide 2
+  * Questions can be found on the the 2nd to last slide
 
-The Handout can be found here: https://docs.google.com/document/d/1Pkxh-BWFfGMYtQs6GqRy3schu8ritKymJWv-TjbynJg/edit?usp=sharing
+* The Handout can be found here: https://docs.google.com/document/d/1Pkxh-BWFfGMYtQs6GqRy3schu8ritKymJWv-TjbynJg/edit?usp=sharing
 
 # play-java-starter-example
 
