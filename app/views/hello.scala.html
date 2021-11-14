@@ -1,0 +1,57 @@
+@*This makes the second parameter "AssetsFinder" implicitly added to each @function*@
+@*The first (...) is a form of an import Makes the name parameter accessible within the following functions*@
+@(name: String, scores: LinkedHashMap[String, Float], control: HomeController)(implicit assetsFinder: AssetsFinder)
+
+@main("Hello") { @*main() is a function that represents a twirl template*@
+    <section id="top">
+        <div class="wrapper">
+            <h1>Hello @name!</h1>
+        </div>
+    </section>
+    <div id="custom-demo">
+        <table>
+            <caption>Unsorted</caption>
+            @fullTable(scores)
+        </table>
+        <table>
+            <caption>Sorted by Value</caption>
+            @fullTable(controllers.HomeController.sortByValue(scores))
+        </table>
+        <table>
+            <caption>Sorted by Key</caption>
+            @fullTable(controllers.HomeController.sortByKey(scores))
+        </table>
+    </div>
+}
+@*
+    A reusable code block with both HTML and Scala
+*@
+@tableRow(entry: (String, Float)) = {
+    <tr>
+        <td>@entry.toString().split(",")(0).substring(1)</td>
+        <td>@percentFormat(
+                Float.parseFloat(
+                    entry.toString().split(",")(1)
+                        .substring(0, entry.toString().split(",")(1).length() - 1)
+                )
+            )
+        </td>
+    </tr>
+}
+
+@fullTable(map: LinkedHashMap[String, Float]) = {
+        <tr>
+            <th>Name</th>
+            <th>Score</th>
+        </tr>
+        @for(entry <- map) {
+            @tableRow(entry)
+        }
+}
+
+@*
+    A reusable code block with ONLY Scala
+*@
+@percentFormat(perc: Float) = @{
+    (perc * 100.0f).toString() ++ "%";
+}

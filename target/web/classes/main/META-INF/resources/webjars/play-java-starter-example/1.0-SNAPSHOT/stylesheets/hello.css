@@ -1,0 +1,39 @@
+table {
+    text-align: center;
+    margin: 50px 50px;
+    display: inline;
+}
+
+table caption {
+    text-align: center;
+    font: 25px "Helvetica Nueue", sans-serif;
+    margin: 15px 0px;
+}
+
+.button-box {
+    margin: auto;
+    margin-top: 50px;
+    width: max-content;
+}
+
+button {
+    border: 0px;
+    background-color: #80c846;
+    color: white;
+    font: 15px "Helvetica Nueue", sans-serif;
+    padding: 5px 10px;
+    width: 150px;
+    margin: 0px 5px;
+}
+
+button:hover {
+    background-color: #70b836;
+    cursor: pointer;
+}
+
+td, th {
+    padding: 10px;
+    text-align: inherit;
+    border: 1px solid black;
+    width: 100px;
+}
